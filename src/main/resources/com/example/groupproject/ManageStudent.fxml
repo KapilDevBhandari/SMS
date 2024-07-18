@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="424.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.groupproject.ManageStudent">
+   <children>
+      <Label fx:id="dashboardTitleLabel" layoutX="204.0" layoutY="14.0" text="Manage Student Dashboard">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="addNewStudentButton" layoutX="20.0" layoutY="58.0" mnemonicParsing="false" onAction="#AddStudent" text="Add new Student (+) ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="studentTableView" layoutX="28.0" layoutY="135.0" prefHeight="200.0" prefWidth="726.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="73.59997940063477" text="ID" />
+          <TableColumn fx:id="fullNameColumn" prefWidth="95.19994354248047" text="Full Name " />
+            <TableColumn fx:id="genderColumn" prefWidth="57.60003662109375" text="Gender" />
+            <TableColumn fx:id="facultyColumn" prefWidth="92.0" text="Faculty" />
+            <TableColumn fx:id="phoneNoColumn" prefWidth="108.79998779296875" text="Phone no" />
+            <TableColumn fx:id="emailColumn" prefWidth="293.6000671386719" text="Email" />
+        </columns>
+      </TableView>
+      <Button fx:id="submitButton" layoutX="672.0" layoutY="357.0" mnemonicParsing="false" onAction="#initialize" text="Submit" />
+   </children>
+</AnchorPane>
